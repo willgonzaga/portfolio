@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    scrollbar-width: thin;
+    scrollbar-color: currentColor;
+}
+
+*::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  
+*::-webkit-scrollbar-thumb {
+    background-color: currentColor;
+    border-radius: 20px;
+}
+
+html,body {
+    min-width: 100%;
+    min-height: 100%;
+    background-color: #121212;
+    margin: 0 auto;
+    font-family: 'system-ui';
+    color: white;
+    font-size: 18px;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section {
+    width: 70%;
+    min-height: 100vh;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+}
+
+.home {
+    flex-direction: row-reverse;
+}
+
+.startimg {
+    display: flex;
+    width: 50%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.startimg img {
+    border-radius: 20%;
+    width: 40%;
+}
+
+.startinfo {
+    display: flex;
+    width: 50%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.homecent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50%;
+}
+
+.typed-cursor--blink {
+    display: none;
+}
+
+.type-p2 + .typed-cursor.typed-cursor--blink {
+    display: initial;
+}
+
+.invisivel  + .typed-cursor{
+    opacity: 0;
+}
+
+.links {
+    display: flex;
+    align-items: flex-end;
+}
+
+.links img {
+    height: 7vh;
+    padding: 10px 10px 0px 0px;
+}
+
+.aboutimg {
+    width: 50%;
+}
+
+.aboutimg img {
+    width: 70%;
+}
+
+.abouttxt {
+    width: 50%;
+}
+
+.abouttxt {
+    text-align: justify;
+}
+
+.abouttxt h3 {
+    font-size: 30px;
+}
+
+.abouttxt h3::after {
+    content: "";
+    width: 40%;
+    height: 3px;
+    background-color: currentColor;
+    display: block;
+    margin: 10px 0px;
+}
+
+.abouttxt p {
+    margin: 0px 0px 5px 0px;
+}
+
+.conhecimento {
+    display: flex;
+    flex-direction: column;
+}
+
+.conhecimento h3 {
+    font-size: 30px;
+    margin: 0 auto;
+}
+
+.conhecimento h3::after {
+    content: "";
+    width: 85%;
+    height: 3px;
+    background-color: currentColor;
+    display: block;
+    margin: 10px auto;
+}
+
+.progbar {
+    display: flex;
+    width: 100%;
+    height: 20px;
+    background-color: rgb(46, 46, 46);
+    border-radius: 10px;
+    margin: 0 0 30px 0;
+}
+
+.preencher {
+    display: flex;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.637);
+    border-radius: 10px;
+}
+
+.proginfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.portfolio h3 {
+    font-size: 30px;
+    margin: 0 auto;
+}
+
+.portfolio h3::after {
+    content: "";
+    width: 85%;
+    height: 3px;
+    background-color: currentColor;
+    display: block;
+    margin: 10px auto;
+}
+
+.projlist {
+    margin-top: 15px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.proj {
+    width:48%;
+}
+
+.proj img {
+    width: 100%;
+}
+
+.proj p {
+    display: flex;
+    justify-content: center;
+}
