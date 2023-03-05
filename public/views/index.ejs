@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Meu nome é Willey, tenho 16 anos e sou um Programador Iniciante. Em 2021 comecei a estudar programação como um hobby e hoje é a profissional que almejo.">
+    <meta name="description" content="Meu nome é Willey, tenho 16 anos e sou um Programador Iniciante. Em 2021 comecei a estudar programação como um hobby e hoje é a profissão que almejo.">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
@@ -107,14 +107,12 @@
         <section class="portfolio section">
             <h3>Portfólio</h3>
             <div class="projlist">
-                <div class="proj">
-                    <img src="https://i.imgur.com/PzUw7Ix.png">
-                    <p>AltF4 - Portal de Noticias</p>
-                </div>
-                <div class="proj">
-                    <img src="https://i.imgur.com/qjZJY9g.png">
-                    <p>oTalDoDolar - Site de Cotações</p>
-                </div>
+                <% for(var i=0; i<projetos.length; i++) { %>
+                    <div class="proj">
+                        <a href="projects/<%- projetos[i].id %>"><img src="<%- projetos[i].projimg %>"></a>
+                        <p><%- projetos[i].projname %> - <%- projetos[i].projdesc %></p>
+                    </div>
+                <% } %>
             </div>
         </section>
     </div>
