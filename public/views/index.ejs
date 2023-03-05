@@ -109,7 +109,7 @@
             <div class="projlist">
                 <% for(var i=0; i<projetos.length; i++) { %>
                     <div class="proj">
-                        <a href="projects/<%- projetos[i].id %>"><img src="<%- projetos[i].projimg %>"></a>
+                        <a href="projects?id=<%- projetos[i].id %>"><img src="<%- projetos[i].projimg %>"></a>
                         <p><%- projetos[i].projname %> - <%- projetos[i].projdesc %></p>
                     </div>
                 <% } %>

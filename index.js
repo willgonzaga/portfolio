@@ -50,8 +50,8 @@ app.get("/", function (req, res) {
 		.finally(() => client.close());
 })
 
-app.get("/projects/:projid", function (req, res) {
-    var projid = req.params.projid;
+app.get("/projects", function (req, res) {
+    var projid = req.query.id;
     async function main() {
             
         await client.connect();
