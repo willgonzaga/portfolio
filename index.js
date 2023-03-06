@@ -5,8 +5,6 @@ const { join } = require('path');
 const path = require("path");
 const dotenv = require('dotenv');
 dotenv.config();
-const moment = require('moment-timezone')
-const urlpage = require('url');
 const { MongoClient } = require('mongodb');
 const url = process.env.linkDB;
 const client = new MongoClient(url);
