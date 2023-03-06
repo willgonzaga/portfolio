@@ -51,7 +51,7 @@ app.get("/", function (req, res) {
 		.finally(() => client.close());
 })
 
-app.get("/projects/", function (req, res) {
+/*app.get("/projects/", function (req, res) {
     var projid = req.query.id;
     async function main() {
             
@@ -82,7 +82,7 @@ app.get("/projects/", function (req, res) {
 		.catch(console.error)
 		.finally(() => client.close());
 })
-
+*/
 app.get("/sitemap.xml", function (req, res) {
     res.sendFile(path.join(__dirname) + "/sitemap.xml");
 })
