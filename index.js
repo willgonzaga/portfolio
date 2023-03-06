@@ -51,11 +51,11 @@ app.get("/", function (req, res) {
 		.finally(() => client.close());
 })
 
-app.get("/projects", function (req, res) {
+app.get("/projects/:id", function (req, res) {
     var fullUrl = req.protocol + '://' + req.get('host') + req.originalUrl;
     const current_url = new URL(fullUrl);
     const search_params = current_url.searchParams;
-    var projid = search_params.get('id');
+    var projid = req.params.id;
     async function main() {
             
         await client.connect();
