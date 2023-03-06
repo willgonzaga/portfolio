@@ -51,7 +51,7 @@ app.get("/", function (req, res) {
 })
 
 app.get("/projects", function (req, res) {
-    var projid = req.query.id;
+    let projid = req.query.id;
     async function main() {
             
         await client.connect();
