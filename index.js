@@ -6,6 +6,7 @@ const path = require("path");
 const dotenv = require('dotenv');
 dotenv.config();
 const moment = require('moment-timezone')
+const urlpage = require('url');
 const { MongoClient } = require('mongodb');
 const url = process.env.linkDB;
 const client = new MongoClient(url);
@@ -51,7 +52,10 @@ app.get("/", function (req, res) {
 })
 
 app.get("/projects", function (req, res) {
-    var projid = req.query.id;
+    var fullUrl = req.protocol + '://' + req.get('host') + req.originalUrl;
+    const current_url = new URL(fullUrl);
+    const search_params = current_url.searchParams;
+    var projid = search_params.get('id');
     async function main() {
             
         await client.connect();
