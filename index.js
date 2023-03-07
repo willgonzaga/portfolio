@@ -47,7 +47,6 @@ app.get("/", function (req, res) {
 		.then(console.log)
 		.catch(console.error)
 		.finally(() => client.close());
-res.render("index", {projetos: projetos});
 })
 
 app.get("/projects/", function (req, res) {
