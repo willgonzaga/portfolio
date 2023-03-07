@@ -49,6 +49,38 @@ app.get("/", function (req, res) {
 		.finally(() => client.close());
 })
 
+app.get("/projects/", function (req, res) {
+    var projid = req.query.id;
+    async function main() {
+            
+        await client.connect();
+        console.log('Acessando banco de dados...');
+        const db = client.db(dbName);
+        const collection = db.collection('Projetos');
+
+        var dbArray = await collection.find({id: projid}).toArray();
+
+        var obj = {
+            "id": dbArray[0].id,
+            "projname": dbArray[0].projname,
+            "projdesc": dbArray[0].projdesc,
+            "projimg": dbArray[0].projimg,
+            "link": dbArray[0].link,
+            "repositorio": dbArray[0].repositorio,
+            "linguagens": dbArray[0].linguagens
+        }
+
+        res.render("projects", {projeto: obj});
+
+        return 'Saindo do banco de dados...';
+    }
+
+    main()
+		.then(console.log)
+		.catch(console.error)
+		.finally(() => client.close());
+})
+
 app.get("/sitemap.xml", function (req, res) {
     res.sendFile(path.join(__dirname) + "/sitemap.xml");
 })
