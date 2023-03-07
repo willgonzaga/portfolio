@@ -24,7 +24,7 @@ app.get("/", function (req, res) {
 
         var dbArray = await collection.find({}).toArray();
         var cont = 0;
-        var projetos = new Array();
+        projetos = new Array();
         while(cont<dbArray.length) {
             var obj = {
                 "id": dbArray[cont].id,
