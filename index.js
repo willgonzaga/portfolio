@@ -39,7 +39,7 @@ app.get("/", function (req, res) {
             cont++;
         }
 
-        res.render("index", {projetos: projetos});
+        res.render("index", { projetos: projetos });
         return 'Saindo do banco de dados...';
     }
 
@@ -70,7 +70,7 @@ app.get("/projects/", function (req, res) {
             "linguagens": dbArray[0].linguagens
         }
 
-        res.render("projects", {projeto: obj});
+        res.render("projects", { projeto: obj });
 
         return 'Saindo do banco de dados...';
     }
