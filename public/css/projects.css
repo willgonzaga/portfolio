@@ -37,6 +37,7 @@
     width: 65%;
     border: 3px solid white;
     animation: chroma 5s infinite;
+    border-radius: 10px;
 }
 
 @keyframes chroma {
