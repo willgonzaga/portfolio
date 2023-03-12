@@ -41,6 +41,10 @@
         margin-top: 10px;
     }
 
+    .links img {
+        height: 6vh;
+    }    
+
     .aboutme {
         flex-direction: column;
         align-items: center;
