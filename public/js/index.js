@@ -11,7 +11,7 @@ var typed2 = new Typed('.type-p1', {
 });
 
 var typed2 = new Typed('.type-p2', {
-    strings: ['Trabalho principalmente com <b>Back-End</b> utilizando <b>Nodejs</b>.'],
+    strings: ['Trabalho principalmente com <b>Back-End</b>.'],
     typeSpeed: 20,
     startDelay: 2700,
     showCursor: true,

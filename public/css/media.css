@@ -1,0 +1,71 @@
+/* 480px */
+
+@media screen and (max-width: 480px) {
+    .home {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .startimg {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 10px;
+    }
+
+    .startimg img {
+        width: 50%;
+    }
+
+    .startinfo {
+        width: 100%;
+        height: 100%;
+        white-space: nowrap;
+    }
+
+    .homecent {
+        display: flex;
+        align-items: center;
+    }
+
+    .homecent h2 {
+        font-size: 18px;
+        justify-content: center;
+    }
+
+    .homecent p {
+        font-size: 15px;
+    }
+
+    .links {
+        margin-top: 10px;
+    }
+
+    .aboutme {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutimg {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    .aboutimg img{
+        width: 100%;
+    }
+
+    .abouttxt {
+        width: auto;
+    }
+
+    .projlist {
+        flex-direction: column;
+    }
+
+    .proj {
+        width: 100%;
+        margin-bottom: 85px;
+    }
+}

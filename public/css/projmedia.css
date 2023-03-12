@@ -1,0 +1,19 @@
+@media screen and (max-width: 480px) {
+    .projectimg {
+        flex-direction: column;
+    }
+
+    .projectimg img {
+        width: 100%;
+    }
+
+    .projectabout {
+        margin-top: 30px;
+        width: 100%;
+        padding: 10px 0px;
+    }
+
+    .projectling {
+        margin-top: 20px;
+    }
+}
