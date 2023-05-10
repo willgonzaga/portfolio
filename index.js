@@ -12,7 +12,8 @@ const dbName = 'Portfolio';
 
 app.use(express.static(join(__dirname + '/public')));
 app.set("views", path.join(__dirname + "/public/views"));
-app.set("view engine", "ejs");
+app.engine('html', require('ejs').renderFile);
+app.set("view engine", "html");
 
 app.get("/", function (req, res) {
     async function main() {
