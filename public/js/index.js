@@ -4,29 +4,16 @@ var typed = new Typed('.type-h2', {
 });
 
 var typed2 = new Typed('.type-p1', {
-    strings: ['Sou um <b>Desenvolvedor Iniciante</b>!'],
+    strings: ['Sou um <b>Desenvolvedor Back-End</b>!'],
     typeSpeed: 20,
     startDelay: 1500,
     showCursor: true,
 });
 
-var typed2 = new Typed('.type-p2', {
-    strings: ['Trabalho principalmente com <b>Back-End</b>.'],
-    typeSpeed: 20,
-    startDelay: 2700,
-    showCursor: true,
-});
-
 var infos = document.getElementById("type-p1");
-var infos2 = document.getElementById("type-p2");
 
 infos.classList.add('invisivel');
-infos2.classList.add('invisivel');
 
 setTimeout(() => {
     infos.classList.remove('invisivel');
 }, 1500);
-
-setTimeout(() => {
-    infos2.classList.remove('invisivel');
-}, 2700);
