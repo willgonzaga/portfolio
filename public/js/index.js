@@ -5,7 +5,7 @@ var typed = new Typed('.type-h2', {
 
 var typed2 = new Typed('.type-p1', {
     strings: ['Sou um <b>Desenvolvedor Back-End</b>!'],
-    typeSpeed: 20,
+    typeSpeed: 25,
     startDelay: 1500,
     showCursor: true,
 });
