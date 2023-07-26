@@ -5,10 +5,6 @@ const { join } = require('path');
 const path = require("path");
 var cors = require('cors');
 require('dotenv').config();
-const { MongoClient } = require('mongodb');
-const url = process.env.linkDB;
-const client = new MongoClient(url);
-const dbName = 'Portfolio';
 
 app.use(express.static(join(__dirname + '../../public')));
 app.set("views", path.join(__dirname + "../../public/views"));
