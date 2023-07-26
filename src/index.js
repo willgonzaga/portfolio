@@ -14,7 +14,7 @@ app.set("view engine", "html");
 const api = require("../src/api/controls");
 
 var corsOptions = {
-    origin: 'http://127.0.0.1:3000',
+    origin: 'https://www.willgonzaga.tech',
     optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 }
 
