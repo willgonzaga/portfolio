@@ -10,15 +10,11 @@ app.use(express.static(join(__dirname + '../../public')));
 app.set("views", path.join(__dirname + "../../public/views"));
 app.engine('html', require('ejs').renderFile);
 app.set("view engine", "html");
+app.use(cors())
 
 const api = require("../src/api/controls");
 
-var corsOptions = {
-    origin: 'https://www.willgonzaga.tech',
-    optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
-}
-
-app.get('/api/repositories', cors(corsOptions), api.getRepositories)
+app.get('/api/repositories', api.getRepositories)
 
 app.get("/", function (req, res) {
     res.render("index");
