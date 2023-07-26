@@ -1,4 +1,3 @@
 node_modules/
-post.sh
 .env
 package-lock.json
