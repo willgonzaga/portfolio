@@ -63,13 +63,4 @@
     .abouttxt {
         width: auto;
     }
-
-    .projlist {
-        flex-direction: column;
-    }
-
-    .proj {
-        width: 100%;
-        margin-bottom: 85px;
-    }
 }

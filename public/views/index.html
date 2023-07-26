@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Meu nome é Willey, tenho 16 anos e sou um Programador Back-End. Em 2021 comecei a estudar programação como um hobby e hoje é a profissão que almejo.">
+    <meta name="description" content="Meu nome é Willey, tenho 17 anos e sou um Programador Back-End. Em 2021 comecei a estudar programação como um hobby e hoje é a profissão que almejo.">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/media.css">
     <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
@@ -17,14 +18,15 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q9Y1QVVZRY"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-      gtag('config', 'G-Q9Y1QVVZRY');
+        gtag('config', 'G-Q9Y1QVVZRY');
     </script>
     <title>Willey - Portfólio</title>
 </head>
+
 <body>
     <div class="main">
         <section class="home section">
@@ -51,79 +53,105 @@
             </div>
             <div class="abouttxt">
                 <h3>Sobre mim</h3>
-                <p> Meu nome é Willey, tenho 
+                <p> Meu nome é Willey, tenho
                     <script>
                         var now = new Date();
                         var nascimento = new Date('2006/07/23');
                         var idade = now.getFullYear() - nascimento.getUTCFullYear();
                         var mes = now.getMonth() - nascimento.getMonth();
-    
-                        if(mes<0 || (mes === 0 && now.getDate() < nascimento.getDate())) {
+
+                        if (mes < 0 || (mes === 0 && now.getDate() < nascimento.getDate())) {
                             idade--;
                         }
                         document.write(idade + ' anos, ');
                     </script>
-                sempre gostei muito de tecnologia, e quando conheci programação não foi diferente, a ideia de poder criar aplicativos/sites, sistemas automatizados me chamou muito a atenção.</p>
+                    sempre gostei muito de tecnologia, e quando conheci programação não foi diferente, a ideia de poder criar aplicativos/sites, sistemas automatizados me chamou muito a atenção.
+                </p>
                 <p> Tive meu primeiro contato em 2021 aos 14 anos de idade, nessa época passava muito tempo jogando e conversando pelo discord, então logo me interessei em fazer bots para discord, e foi assim que minha mente se abriu e comecei a estudar de verdade.</p>
             </div>
         </section>
         <section class="conhecimento section">
             <h3>Uso em Projetos</h3>
-                <div class="proginfo">
-                    <h4>HTML</h4>
-                    <p class="porcent">80%</p>
+            <div class="proginfo">
+                <h4>HTML</h4>
+                <p class="porcent">80%</p>
+            </div>
+            <div class="progbar">
+                <div class="preencher" style="width: 80%" ;>
                 </div>
-                <div class="progbar">
-                    <div class="preencher" style="width: 80%";>
-                    </div>
-                </div>
-                <div class="proginfo">
-                    <h4>CSS</h4>
-                    <p class="porcent">70%</p>
-                </div>
-                <div class="progbar">
-                    <div class="preencher" style="width: 70%";></div>
-                </div>
-                <div class="proginfo">
-                    <h4>JavaScript</h4>
-                    <p class="porcent">50%</p>
-                </div>
-                <div class="progbar">
-                    <div class="preencher" style="width: 50%";></div>
-                </div>
-                <div class="proginfo">
-                    <h4>NodeJS</h4>
-                    <p class="porcent">90%</p>
-                </div>
-                <div class="progbar">
-                    <div class="preencher" style="width: 90%";></div>
-                </div>
-                <div class="proginfo">
-                    <h4>PHP</h4>
-                    <p class="porcent">30%</p>
-                </div>
-                <div class="progbar">
-                    <div class="preencher" style="width: 30%";></div>
-                </div>
-                <div class="proginfo">
-                    <h4>MongoDB</h4>
-                    <p class="porcent">20%</p>
-                </div>
-                <div class="progbar">
-                    <div class="preencher" style="width: 20%";></div>
-                </div>
+            </div>
+            <div class="proginfo">
+                <h4>CSS</h4>
+                <p class="porcent">70%</p>
+            </div>
+            <div class="progbar">
+                <div class="preencher" style="width: 70%" ;></div>
+            </div>
+            <div class="proginfo">
+                <h4>JavaScript</h4>
+                <p class="porcent">50%</p>
+            </div>
+            <div class="progbar">
+                <div class="preencher" style="width: 50%" ;></div>
+            </div>
+            <div class="proginfo">
+                <h4>NodeJS</h4>
+                <p class="porcent">90%</p>
+            </div>
+            <div class="progbar">
+                <div class="preencher" style="width: 90%" ;></div>
+            </div>
+            <div class="proginfo">
+                <h4>PHP</h4>
+                <p class="porcent">30%</p>
+            </div>
+            <div class="progbar">
+                <div class="preencher" style="width: 30%" ;></div>
+            </div>
+            <div class="proginfo">
+                <h4>MongoDB</h4>
+                <p class="porcent">20%</p>
+            </div>
+            <div class="progbar">
+                <div class="preencher" style="width: 20%" ;></div>
+            </div>
         </section>
         <section class="portfolio section">
             <h3>Portfólio</h3>
-            <div class="projlist">
-                <% for(var i=0; i<projetos.length; i++) { %>
-                    <div class="proj">
-                        <a href="projects?id=<%- projetos[i].id %>"><img src="<%- projetos[i].projimg %>"></a>
-                        <p><%- projetos[i].projname %> - <%- projetos[i].projdesc %></p>
-                    </div>
-                <% } %>
+            <div id="projlist">
+                <script>
+                    const projlist = document.getElementById("projlist");
+                    async function listProj() {
+                        const response = await fetch('http://127.0.0.1:3000/api/repositories');
+                        const list = await response.json();
+                        list.forEach(async (repo) => {
+                            const data = {
+                                name: repo.name,
+                                description: repo.description,
+                                url: repo.url
+                            }
+                            console.log(data)
+                            const aUrl = document.createElement("a");
+                            const pName = document.createElement("p");
+                            const pDesc = document.createElement("p");
+                            const aUrlText = document.createTextNode("");
+                            aUrl.href = data.url;
+                            const pNameText = document.createTextNode(data.name);
+                            const pDescText = document.createTextNode(data.description);
+
+                            aUrl.appendChild(aUrlText);
+                            pName.appendChild(pNameText);
+                            pDesc.appendChild(pDescText);
+                            const aDiv = projlist.appendChild(aUrl);
+                            aDiv.appendChild(pName);
+                            aDiv.appendChild(pDesc);
+                        });
+                    }
+                    listProj();
+                </script>
             </div>
         </section>
     </div>
 </body>
+
 </html>
