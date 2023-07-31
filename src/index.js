@@ -21,7 +21,7 @@ app.get("/", function (req, res) {
 })
 
 app.get("/sitemap.xml", function (req, res) {
-    res.sendFile(path.join(__dirname) + "/sitemap.xml");
+    res.sendFile(path.resolve('sitemap.xml'));
 })
 
 app.listen(3000, function () {
