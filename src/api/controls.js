@@ -7,7 +7,9 @@ async function getRepositories(request, response) {
     try {
         const api = await axios.get(`https://api.github.com/users/${username}/repos`, {
             headers: {
-                Authorization: `token ${token}`,
+                Accept: 'application/vnd.github.v3+json',
+                Authorization: `Bearer ${token}`,
+                'X-GitHub-Api-Version': '2022-11-28',
             },
         });
         function listRepos() {
@@ -16,7 +18,6 @@ async function getRepositories(request, response) {
                 if (repo.name != username) {
                     data.push({
                         name: repo.name,
-                        description: repo.description,
                         url: repo.html_url
                     })
                 }
@@ -27,33 +28,10 @@ async function getRepositories(request, response) {
         return response.status(200).json(listRepos());
     } catch (error) {
         console.error('Erro ao listar repositórios:', error.message);
-        throw error;
+        return response.status(401).json('Error: ' + error.message);
     }
 }
 
 module.exports = {
     getRepositories
-}
-
-
- /*
- getRepositories()
-    .then((repositories) => {
-        repositories.forEach((repo) => {
-            if (repo.name != username) {
-                const data = {
-                    name: repo.name,
-                    description: repo.description,
-                    url: repo.html_url
-                }
-                const li = document.createElement("li");
-                li.textContent = 'asd';
-                projlist.appendChild(li);
-                console.log(data);
-            }
-        });
-    })
-    .catch((error) => {
-        console.error('Erro:', error.message);
-    });
-*/
+};
