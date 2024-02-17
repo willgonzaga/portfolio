@@ -24,6 +24,10 @@ app.get("/sitemap.xml", function (req, res) {
     res.sendFile(path.resolve('sitemap.xml'));
 })
 
+app.get("/robots.txt", function (req, res) {
+    res.sendDate(path.resolve('robots.txt'));
+})
+
 app.listen(3000, function () {
     console.log("Running in 3000 port");
 })
