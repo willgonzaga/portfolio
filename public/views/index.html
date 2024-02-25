@@ -39,10 +39,10 @@
                     <h2><span class="type-h2"></span></h2>
                     <p><span id="type-p1" class="type-p1"></span></p>
                     <div class="links">
-                        <a href="https://instagram.com/willey.gonzaga"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt=""></a>
-                        <a href="https://x.com/vaileii"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968958.png" alt=""></a>
-                        <a href="https://github.com/willgonzaga"><img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt=""></a>
-                        <a href="https://linkedin.com/in/willeygonzaga/"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt=""></a>
+                        <a href="https://instagram.com/willey.gonzaga" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt=""></a>
+                        <a href="https://x.com/vaileii" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968958.png" alt=""></a>
+                        <a href="https://github.com/willgonzaga" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt=""></a>
+                        <a href="https://linkedin.com/in/willeygonzaga/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt=""></a>
                     </div>
                 </div>
                 <script type="text/javascript" src="../js/index.js"></script>
@@ -148,6 +148,7 @@
                             const aProj = document.createElement("a");
                             const imgProj = document.createElement("img")
                             aProj.setAttribute("href", data.url);
+                            aProj.setAttribute("target", "_blank");
                             imgProj.setAttribute("src", `https://githubrepocard.vercel.app/apis/githubcard?user=willgonzaga&repo=${data.name}`);
 
                             projlist.appendChild(aProj).appendChild(imgProj);
