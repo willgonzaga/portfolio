@@ -137,7 +137,7 @@ html,body {
 
 .conhecimento h3 {
     font-size: 30px;
-    margin: 0 auto;
+    margin: 30px auto;
 }
 
 .conhecimento h3::after {
@@ -149,25 +149,26 @@ html,body {
     margin: 10px auto;
 }
 
-.progbar {
-    display: flex;
-    width: 100%;
-    height: 20px;
-    background-color: rgb(46, 46, 46);
-    border-radius: 10px;
-    margin: 0 0 30px 0;
+.conhecimento h4 {
+    font-size: 20px;
+    margin: 0 auto;
 }
 
-.preencher {
-    display: flex;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.637);
-    border-radius: 10px;
+.conhecimento h4::after {
+    content: "";
+    width: 85%;
+    height: 3px;
+    background-color: currentColor;
+    display: block;
+    margin: 10px auto;
 }
 
-.proginfo {
-    display: flex;
-    justify-content: space-between;
+.conhecimento img {
+    width: 80px;
+}
+
+.conhecimento div {
+    margin: 20px auto;
 }
 
 .portfolio {
@@ -178,7 +179,7 @@ html,body {
 
 .portfolio h3 {
     font-size: 30px;
-    margin: 0 auto;
+    margin: 50px auto 0;
 }
 
 .portfolio h3::after {
