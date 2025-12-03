@@ -145,8 +145,7 @@
                     
                     aProj.href = repo.url;
                     aProj.target = "_blank";
-                    aProj.classList.add('project-card'); // Classe para estilização
-                    // Adiciona delay incremental para efeito cascata
+                    aProj.classList.add('project-card');
                     aProj.setAttribute('data-aos', 'fade-up');
                     
                     imgProj.src = `https://githubrepocard.vercel.app/apis/githubcard?user=willgonzaga&repo=${repo.name}`;
@@ -161,7 +160,6 @@
         }
         listProj();
         
-        // Inicializa animações
         AOS.init({
             duration: 1000,
             once: true
