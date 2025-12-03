@@ -49,7 +49,11 @@
             <div class="startimg">
                 <img src="https://i.imgur.com/0PS5R3q.png" alt="Foto de perfil">
             </div>
-            <h2 class="type-h2"></h2> <p class="type-p1"></p> <div class="links">
+            
+            <h2><span class="type-h2"></span></h2> 
+            <p><span class="type-p1"></span></p> 
+            
+            <div class="links">
                 <a href="https://github.com/willgonzaga" target="_blank" class="social-btn github">
                     <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub"> GitHub
                 </a>
@@ -145,7 +149,7 @@
                     
                     aProj.href = repo.url;
                     aProj.target = "_blank";
-                    aProj.classList.add('project-card');
+                    aProj.classList.add('project-card'); 
                     aProj.setAttribute('data-aos', 'fade-up');
                     
                     imgProj.src = `https://githubrepocard.vercel.app/apis/githubcard?user=willgonzaga&repo=${repo.name}`;
