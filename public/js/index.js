@@ -1,19 +1,16 @@
 var typed = new Typed('.type-h2', {
-    strings: ['&#60;&#47;' + 'Willey Gonzaga de Oliveira' + '&#62;'],
-    typeSpeed: 30,
+    strings: ['&#60;&#47;' + 'Willey Gonzaga' + '&#62;'],
+    typeSpeed: 40,
+    backSpeed: 20,
+    showCursor: false
 });
 
 var typed2 = new Typed('.type-p1', {
-    strings: ['Sou um <b>Desenvolvedor de Software</b>!'],
-    typeSpeed: 25,
-    startDelay: 1500,
+    strings: ['Desenvolvedor de Software', 'Back-End Developer', 'Tech Enthusiast'],
+    typeSpeed: 30,
+    backSpeed: 30,
+    startDelay: 1000,
+    backDelay: 2000,
+    loop: true,
     showCursor: true,
 });
-
-var infos = document.getElementById("type-p1");
-
-infos.classList.add('invisivel');
-
-setTimeout(() => {
-    infos.classList.remove('invisivel');
-}, 1500);
