@@ -25,7 +25,7 @@ app.get("/sitemap.xml", function (req, res) {
 })
 
 app.get("/robots.txt", function (req, res) {
-    res.sendDate(path.resolve('robots.txt'));
+    res.sendFile(path.resolve('robots.txt'));
 })
 
 app.listen(3000, function () {
