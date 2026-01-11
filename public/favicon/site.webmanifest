@@ -1,1 +1,25 @@
-{"name":"","short_name":"","icons":[{"src":"/android-chrome-192x192.png","sizes":"192x192","type":"image/png"},{"src":"/android-chrome-512x512.png","sizes":"512x512","type":"image/png"}],"theme_color":"#ffffff","background_color":"#ffffff","display":"standalone"}
+{
+  "name": "Willey Gonzaga - Desenvolvedor Back-End",
+  "short_name": "Willey Gonzaga",
+  "description": "Portfólio profissional de Willey Gonzaga - Desenvolvedor Back-End especializado em Java, Spring Boot, PHP, Laravel e Node.js",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#00ff88",
+  "background_color": "#0a0e27",
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/",
+  "lang": "pt-BR",
+  "orientation": "portrait-primary",
+  "categories": ["portfolio", "developer", "technology"]
+}
