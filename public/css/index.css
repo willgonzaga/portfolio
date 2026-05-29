@@ -241,10 +241,17 @@ h3 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 2rem;
+    align-items: start;
+}
+
+.project-card {
+    display: block;
 }
 
 .project-card img {
     width: 100%;
+    height: auto;
+    display: block;
     border-radius: 12px;
     border: var(--glass-border);
     transition: transform 0.3s, box-shadow 0.3s;
