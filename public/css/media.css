@@ -1,66 +1,233 @@
-/* 480px */
-
-@media screen and (max-width: 480px) {
+@media(min-width:1500px) {
     .home {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
+        padding-block:110px
     }
 
-    .startimg {
-        width: 100%;
-        height: 100%;
-        margin-bottom: 10px;
+}
+@media(max-width:1280px) {
+    .main,footer {
+        margin-inline:48px
+    }
+    .home {
+        gap:48px
+    }
+    h1 {
+        font-size:60px
+    }
+    .stack-strip i {
+        padding-inline:10px
     }
 
-    .startimg img {
-        width: 50%;
+}
+@media(max-width:1000px) {
+    .navbar {
+        padding-inline:28px
     }
-
-    .startinfo {
-        width: 100%;
-        height: 100%;
-        white-space: nowrap;
+    .main,footer {
+        margin-inline:28px
     }
-
-    .homecent {
-        display: flex;
-        align-items: center;
+    .home {
+        gap:32px;
+        padding-block:70px
     }
-
-    .homecent h2 {
-        font-size: 18px;
-        justify-content: center;
+    h1 {
+        font-size:50px;
+        letter-spacing:-2px
     }
-
-    .homecent p {
-        font-size: 15px;
+    .portrait-frame img {
+        height:280px
     }
-
-    .links {
-        margin-top: 10px;
-    }
-
-    .links img {
-        height: 6vh;
-    }    
-
     .aboutme {
-        flex-direction: column;
-        align-items: center;
+        gap:40px
+    }
+    .stack-strip p {
+        font-size:14px
+    }
+    .stack-strip i {
+        padding-inline:6px
+    }
+    .skill-category {
+        padding:22px
+    }
+    .skill-category h3 {
+        font-size:15px
+    }
+    .code-note {
+        left:-10px
+    }
+    h2 {
+        font-size:38px
     }
 
-    .aboutimg {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 40px;
+}
+@media(max-width:760px) {
+    .navbar {
+        height:78px;
+        position:relative
+    }
+    .nav-contact {
+        display:none
+    }
+    .menu-toggle {
+        display:flex;
+        gap:12px;
+        align-items:center;
+        background:transparent;
+        border:1px solid var(--border);
+        color:var(--text);
+        padding:7px 12px;
+        border-radius:4px;
+        font-size:12px
+    }
+    .navbar nav {
+        display:none;
+        position:absolute;
+        top:77px;
+        left:0;
+        right:0;
+        background:var(--surface);
+        border-bottom:1px solid var(--border);
+        z-index:5;
+        padding:24px 28px
+    }
+    .navbar nav.is-open {
+        display:block
+    }
+    .nav-links {
+        flex-direction:column;
+        gap:20px
+    }
+    .home {
+        grid-template-columns:1fr;
+        gap:55px;
+        padding-top:50px;
+        padding-bottom:50px
+    }
+    h1 {
+        font-size:clamp(42px,9vw,65px)
+    }
+    .hero-description {
+        max-width:450px
+    }
+    .hero-note {
+        margin-top:25px
+    }
+    .hero-visual {
+        justify-self:center;
+        max-width:360px
+    }
+    .portrait-frame img {
+        height:300px
+    }
+    .stack-strip {
+        align-items:start;
+        flex-direction:column;
+        gap:12px
+    }
+    .stack-strip>span:last-child {
+        display:none
+    }
+    .stack-strip p {
+        display:flex;
+        flex-wrap:wrap;
+        gap:8px;
+        font-size:14px
+    }
+    .stack-strip i {
+        padding-inline:3px
+    }
+    .section {
+        padding-block:65px
+    }
+    .aboutme {
+        grid-template-columns:1fr;
+        gap:25px
+    }
+    .section-heading {
+        align-items:start;
+        flex-direction:column;
+        gap:20px
+    }
+    .section-heading>p br {
+        display:none
+    }
+    .skill-grid {
+        grid-template-columns:1fr
+    }
+    .skill-category {
+        padding:26px
+    }
+    .skill-category h3 {
+        font-size:20px;
+        margin-top:14px
+    }
+    .tech-list {
+        margin-top:20px
+    }
+    #projlist {
+        grid-template-columns:repeat(2,minmax(0,1fr))
+    }
+    .contato {
+        padding:55px 18px
+    }
+    .contato h2 {
+        font-size:38px
+    }
+    footer {
+        flex-wrap:wrap;
+        gap:20px
+    }
+    footer p {
+        order:3;
+        width:100%
+    }
+    footer div {
+        margin-left:auto
     }
 
-    .aboutimg img{
-        width: 100%;
+}
+@media(max-width:420px) {
+    .main,footer {
+        margin-inline:20px
+    }
+    .navbar {
+        padding-inline:20px
+    }
+    .eyebrow {
+        font-size:9px;
+        letter-spacing:1.5px
+    }
+    .hero-actions {
+        gap:20px
+    }
+    .btn {
+        padding:13px 17px;
+        gap:18px
+    }
+    .hero-visual {
+        max-width:300px
+    }
+    .portrait-frame img {
+        height:260px
+    }
+    .code-note {
+        left:-5px;
+        padding:11px 13px
+    }
+    .portrait-top {
+        font-size:7px
+    }
+    h2 {
+        font-size:34px
+    }
+    #projlist {
+        grid-template-columns:1fr
+    }
+    .contato h2 {
+        font-size:32px
+    }
+    .contact-email {
+        font-size:9px
     }
 
-    .abouttxt {
-        width: auto;
-    }
 }

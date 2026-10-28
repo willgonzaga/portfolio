@@ -5,7 +5,7 @@ const token = process.env.gitAuth;
 
 async function getRepositories(request, response) {
     try {
-        const api = await axios.get(`https://api.github.com/users/${username}/repos`, {
+        const api = await axios.get(`https://api.github.com/users/${username}/repos?sort=updated&per_page=100`, {
             headers: {
                 Accept: 'application/vnd.github.v3+json',
                 Authorization: `Bearer ${token}`,
@@ -18,7 +18,9 @@ async function getRepositories(request, response) {
                 if (repo.name != username) {
                     data.push({
                         name: repo.name,
-                        url: repo.html_url
+                        url: repo.html_url,
+                        description: repo.description,
+                        language: repo.language
                     })
                 }
             })

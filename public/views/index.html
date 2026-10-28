@@ -10,7 +10,7 @@
     <meta name="keywords" content="desenvolvedor backend, desenvolvedor java, spring boot, node.js, laravel, php, desenvolvedor freelancer, api rest, microsserviços, desenvolvedor full stack, portfolio desenvolvedor, willey gonzaga">
     <meta name="author" content="Willey Gonzaga de Oliveira">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <meta name="theme-color" content="#00ff88">
+    <meta name="theme-color" content="#b7f76b">
     <meta property="og:locale" content="pt_BR">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.willgonzaga.com/">
@@ -97,9 +97,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/media.css">
     
@@ -114,142 +113,71 @@
 </head>
 
 <body>
-    
-    <nav class="navbar">
-        <div class="logo">&lt;Willey/&gt;</div>
-        <ul class="nav-links">
-            <li><a href="#home">Início</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#portfolio">Projetos</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
-    </nav>
-
-    <div class="main">
-        <section class="home" id="home" data-aos="fade-down">
-            <div class="startimg">
-                <img src="https://i.imgur.com/0PS5R3q.png" alt="Willey Gonzaga - Desenvolvedor Back-End Java, PHP e Node.js" width="300" height="300">
-            </div>
-            
-            <h1 style="display:none;">Willey Gonzaga - Desenvolvedor Back-End Especializado em Java, Spring Boot, PHP, Laravel e Node.js</h1>
-            <h2><span class="type-h2"></span></h2> 
-            <p><span class="type-p1"></span></p> 
-            
-            <div class="links">
-                <a href="https://github.com/willgonzaga" target="_blank" rel="noopener noreferrer" class="social-btn github" aria-label="Visitar perfil do GitHub de Willey Gonzaga">
-                    <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub logo" width="24" height="24" loading="lazy"> GitHub
-                </a>
-                <a href="https://linkedin.com/in/willeygonzaga/" target="_blank" rel="noopener noreferrer" class="social-btn linkedin" aria-label="Visitar perfil do LinkedIn de Willey Gonzaga">
-                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn logo" width="24" height="24" loading="lazy"> LinkedIn
-                </a>
-            </div>
-        </section>
-
-        <section class="aboutme glass-effect" id="sobre" data-aos="fade-right" itemscope itemtype="https://schema.org/AboutPage">
-            <div class="aboutimg">
-                <img src="https://cdn-icons-png.flaticon.com/256/3800/3800457.png" alt="Ícone sobre desenvolvedor de software" width="200" height="200" loading="lazy">
-            </div>
-            <div class="abouttxt">
-                <h2>Sobre mim</h2>
-                <p>Olá! Sou <strong itemprop="name">Willey Gonzaga de Oliveira</strong>. Tenho <strong><script src="../js/idade.js"></script> anos</strong> e a tecnologia é meu combustível.</p>
-                <p>Iniciei minha jornada aos 14 anos criando bots e hoje atuo como <strong itemprop="jobTitle">Desenvolvedor Back-End</strong>. Tenho experiência com <strong>Java, PHP, JavaScript</strong> e frameworks modernos como <strong>Spring Boot e Laravel</strong>. Meu foco é criar <strong>soluções escaláveis</strong> e limpas com <strong>APIs REST</strong> e <strong>microsserviços</strong>.</p>
-            </div>
-        </section>
-
-        <section class="conhecimento" id="skills">
-            <h2 data-aos="fade-up">Habilidades e Tecnologias</h2>
-            
-            <div class="skill-category" data-aos="zoom-in" data-aos-delay="100">
-                <h3>Linguagens de Programação</h3>
-                <div class="icons-container">
-                    <img src="https://skillicons.dev/icons?i=java" alt="Java" title="Java" width="48" height="48" loading="lazy">
-                    <img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js" title="Node.js" width="48" height="48" loading="lazy">
-                    <img src="https://skillicons.dev/icons?i=php" alt="PHP" title="PHP" width="48" height="48" loading="lazy">
-                    <img src="https://skillicons.dev/icons?i=python" alt="Python" title="Python" width="48" height="48" loading="lazy">
-                    <img src="https://skillicons.dev/icons?i=javascript" alt="JavaScript" title="JavaScript" width="48" height="48" loading="lazy">
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <header class="navbar">
+        <a class="logo" href="#home" aria-label="Willey Gonzaga, início">w<span>.</span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation">Menu <span aria-hidden="true">☰</span></button>
+        <nav id="navigation" aria-label="Navegação principal">
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Início</a></li>
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#skills">Tecnologias</a></li>
+                <li><a href="#portfolio">Projetos</a></li>
+            </ul>
+        </nav>
+        <a class="nav-contact" href="#contato">Vamos conversar <span aria-hidden="true">↗</span></a>
+    </header>
+    <main class="main" id="conteudo">
+        <section class="home" id="home" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="eyebrow"><span class="status-dot"></span> DESENVOLVEDOR BACK-END</p>
+                <h1 id="hero-title">Ideias em código.<br>Soluções que<br><span>fazem sentido.</span></h1>
+                <p class="hero-description">Olá, sou <strong>Willey Gonzaga</strong>. Construo APIs, conecto sistemas e transformo desafios em software bem feito.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#portfolio">Explorar projetos <span aria-hidden="true">↗</span></a>
+                    <a class="text-link" href="https://github.com/willgonzaga" target="_blank" rel="noopener noreferrer">Meu GitHub <span aria-hidden="true">↗</span></a>
                 </div>
+                <div class="hero-note"><span aria-hidden="true">⌘</span> Código limpo. Curiosidade constante.</div>
             </div>
+            <div class="hero-visual">
+                <div class="portrait-frame">
+                    <div class="portrait-top"><span>um pouco de quem está por trás do código</span><span aria-hidden="true">↗</span></div>
+                    <img src="https://i.imgur.com/0PS5R3q.png" alt="Willey Gonzaga" width="440" height="440" fetchpriority="high">
+                    <div class="portrait-caption"><div><strong>Willey Gonzaga</strong><span>Desenvolvedor de Software</span></div><span class="portrait-symbol" aria-hidden="true">{ }</span></div>
+                </div>
+                <div class="code-note"><span class="status-dot"></span><code>const passion = "build things";</code></div>
+            </div>
+        </section>
+        <div class="stack-strip" aria-label="Principais tecnologias"><span>MINHA STACK PRINCIPAL</span><p>Java <i>/</i> Spring Boot <i>/</i> PHP <i>/</i> Laravel <i>/</i> Node.js</p><span aria-hidden="true">✳</span></div>
 
+        <section class="aboutme section" id="sobre">
+            <div class="section-intro"><p class="eyebrow">01 / SOBRE MIM</p><h2>Curiosidade que<br>vira <span>construção.</span></h2></div>
+            <div class="abouttxt"><p class="lead">Tudo começou aos 14 anos, criando bots. A vontade de entender como as coisas funcionam virou minha profissão.</p><p>Sou Willey Gonzaga de Oliveira, desenvolvedor back-end. Trabalho com Java, PHP e JavaScript, usando Spring Boot e Laravel para criar APIs REST, microsserviços e soluções escaláveis.</p><p>Gosto de encontrar simplicidade em problemas complexos — e de escrever código que faça sentido para quem vem depois.</p><a class="text-link" href="https://linkedin.com/in/willeygonzaga/" target="_blank" rel="noopener noreferrer">Mais sobre minha trajetória <span aria-hidden="true">↗</span></a></div>
+        </section>
+
+        <section class="section" id="skills">
+            <div class="section-heading"><div><p class="eyebrow">02 / TECNOLOGIAS</p><h2>As ferramentas<br>por trás das <span>soluções.</span></h2></div><p>Da lógica à infraestrutura,<br>uma stack para tirar ideias do papel.</p></div>
             <div class="skill-grid">
-                <div class="skill-category" data-aos="zoom-in" data-aos-delay="200">
-                    <h3>Banco de Dados</h3>
-                    <div class="icons-container">
-                        <img src="https://skillicons.dev/icons?i=mysql" alt="MySQL" title="MySQL" width="48" height="48" loading="lazy">
-                        <img src="https://skillicons.dev/icons?i=postgres" alt="PostgreSQL" title="PostgreSQL" width="48" height="48" loading="lazy">
-                        <img src="https://skillicons.dev/icons?i=mongodb" alt="MongoDB" title="MongoDB" width="48" height="48" loading="lazy">
-                    </div>
-                </div>
-                
-                <div class="skill-category" data-aos="zoom-in" data-aos-delay="300">
-                    <h3>Frameworks e Ferramentas</h3>
-                    <div class="icons-container">
-                        <img src="https://skillicons.dev/icons?i=spring" alt="Spring Boot Framework" title="Spring Boot" width="48" height="48" loading="lazy">
-                        <img src="https://skillicons.dev/icons?i=laravel" alt="Laravel Framework" title="Laravel" width="48" height="48" loading="lazy">
-                        <img src="https://skillicons.dev/icons?i=docker" alt="Docker" title="Docker" width="48" height="48" loading="lazy">
-                        <img src="https://skillicons.dev/icons?i=git" alt="Git" title="Git" width="48" height="48" loading="lazy">
-                    </div>
-                </div>
+                <article class="skill-category"><span class="category-symbol" aria-hidden="true">&lt;/&gt;</span><span class="card-number">01</span><h3>Linguagens & runtime</h3><p>A base para construir.</p><div class="tech-list"><span>Java</span><span>PHP</span><span>JavaScript</span><span>Python</span><span>Node.js</span></div></article>
+                <article class="skill-category"><span class="category-symbol" aria-hidden="true">{ }</span><span class="card-number">02</span><h3>Frameworks & ferramentas</h3><p>Do desenvolvimento à entrega.</p><div class="tech-list"><span>Spring Boot</span><span>Laravel</span><span>Docker</span><span>Git</span></div></article>
+                <article class="skill-category"><span class="category-symbol" aria-hidden="true">▤</span><span class="card-number">03</span><h3>Bancos de dados</h3><p>Dados bem estruturados.</p><div class="tech-list"><span>MySQL</span><span>PostgreSQL</span><span>MongoDB</span></div></article>
             </div>
         </section>
 
-        <section class="portfolio" id="portfolio" data-aos="fade-up" itemscope itemtype="https://schema.org/CollectionPage">
-            <h2 itemprop="name">Portfólio de Projetos</h2>
-            <p class="subtitle" itemprop="description">Meus repositórios recentes no GitHub - Projetos em Java, PHP e Node.js</p>
-            <div id="projlist" itemprop="mainEntity" itemscope itemtype="https://schema.org/ItemList">
-                </div>
+        <section class="section portfolio" id="portfolio">
+            <div class="section-heading"><div><p class="eyebrow">03 / PROJETOS</p><h2>Código que sai<br>do <span>papel.</span></h2></div><a class="text-link" href="https://github.com/willgonzaga?tab=repositories" target="_blank" rel="noopener noreferrer">Todos no GitHub <span aria-hidden="true">↗</span></a></div>
+            <div id="projlist" aria-live="polite" aria-busy="true"><p class="project-message">Carregando projetos…</p></div>
         </section>
 
-        <section class="contato" id="contato" data-aos="flip-up" itemscope itemtype="https://schema.org/ContactPage">
-            <h2>Vamos conversar?</h2>
-            <p itemprop="description">Estou disponível para novos projetos e oportunidades. Entre em contato para discutir desenvolvimento de APIs, microsserviços ou soluções back-end.</p>
-            <div class="contato-links">
-                <a href="mailto:willey.gonzaga28@gmail.com" class="btn btn-primary" itemprop="email" aria-label="Enviar e-mail para Willey Gonzaga">Enviar E-mail</a>
-                <a href="https://linkedin.com/in/willeygonzaga/" target="_blank" rel="noopener noreferrer" class="btn btn-outline" aria-label="Visitar perfil do LinkedIn de Willey Gonzaga">LinkedIn</a>
-            </div>
+        <section class="contato" id="contato">
+            <p class="eyebrow"><span class="status-dot"></span> VAMOS CONSTRUIR ALGO JUNTOS?</p>
+            <h2>Seu próximo projeto<br>começa com um <span>olá.</span></h2>
+            <p>Tem uma ideia, um desafio ou uma oportunidade?<br>Vamos conversar sobre o que podemos criar.</p>
+            <a href="mailto:willey.gonzaga28@gmail.com" class="btn btn-primary">Entre em contato <span aria-hidden="true">↗</span></a>
+            <a class="contact-email" href="mailto:willey.gonzaga28@gmail.com">willey.gonzaga28@gmail.com</a>
         </section>
-
-        <footer>
-            <p>&copy; <script>document.write(new Date().getFullYear())</script> Willey Gonzaga. Feito com 💚</p>
-        </footer>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="../js/index.js"></script>
-    
-    <script>
-        const projlist = document.getElementById("projlist");
-        async function listProj() {
-            try {
-                const response = await fetch('/api/repositories');
-                const list = await response.json();
-                list.forEach((repo, index) => {
-                    const aProj = document.createElement("a");
-                    const imgProj = document.createElement("img");
-                    
-                    aProj.href = repo.url;
-                    aProj.target = "_blank";
-                    aProj.classList.add('project-card'); 
-                    aProj.setAttribute('data-aos', 'fade-up');
-                    
-                    imgProj.src = `https://githubrepocard.vercel.app/apis/githubcard?user=willgonzaga&repo=${repo.name}`;
-                    imgProj.alt = `Projeto ${repo.name} - ${repo.description || 'Repositório no GitHub'}`;
-                    imgProj.loading = 'lazy';
-
-                    aProj.appendChild(imgProj);
-                    projlist.appendChild(aProj);
-                });
-            } catch (e) {
-                console.error("Erro ao carregar projetos", e);
-            }
-        }
-        listProj();
-        
-        AOS.init({
-            duration: 1000,
-            once: true
-        });
-    </script>
+    </main>
+    <footer><a class="logo" href="#home">w<span>.</span></a><p>© <span id="year">2026</span> Willey Gonzaga. Feito com intenção e código.</p><div><a href="https://github.com/willgonzaga" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://linkedin.com/in/willeygonzaga/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div></footer>
+    <script src="/js/index.js" defer></script>
 </body>
 </html>
