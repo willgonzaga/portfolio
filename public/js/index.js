@@ -52,7 +52,7 @@ async function listProjects() {
             top.className = 'project-top';
             top.setAttribute('aria-hidden', 'true');
             top.innerHTML = '<span>⌘</span><span>↗</span>';
-            const title = document.createElement('h3');
+            const title = document.createElement('h4');
             title.textContent = repo.name;
             const description = document.createElement('p');
             description.textContent = repo.description || 'Explore o código e os detalhes deste projeto no GitHub.';

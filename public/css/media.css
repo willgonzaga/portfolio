@@ -167,6 +167,22 @@
     #projlist {
         grid-template-columns:repeat(2,minmax(0,1fr))
     }
+    .live-project {
+        grid-template-columns:1fr
+    }
+    .live-project-copy {
+        padding:28px
+    }
+    .acadnotas-visual {
+        border-left:0;
+        border-top:1px solid #36432c;
+        padding:38px 28px
+    }
+    .project-group-heading {
+        align-items:start;
+        flex-direction:column;
+        gap:8px
+    }
     .contato {
         padding:55px 18px
     }
