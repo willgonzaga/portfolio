@@ -28,6 +28,10 @@ app.get("/robots.txt", function (req, res) {
     res.sendFile(path.resolve('robots.txt'));
 })
 
+app.get("/ads.txt", function (req, res) {
+    res.sendFile(path.resolve('ads.txt'));
+})
+
 app.listen(3000, function () {
     console.log("Running in 3000 port");
 })
